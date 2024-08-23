@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">SOOOO</h1>
+                <h1 class = "header_text">I made this as a little appreciation for you, it took me a while to change the colors and add clouds and such but I hope you like! Since I can't get you flowers (yet, you will get so many flowers) here are these •ᴗ• </h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmk2aGcybXAxY2VwZXlhcDlvMjNhbXdqcW53OWVxdzZidGhoc3I2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/j2E2gqrziGZFgk1pG2/giphy.webp" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">CLICK HERE!!</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "index.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
